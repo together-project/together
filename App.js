@@ -1,6 +1,6 @@
 import React, { Component, useState } from "react";
 
-import { StyleSheet, Text, View, TouchableOpacity, Modal, Alert, Image } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, Modal, Image, Linking } from 'react-native';
 import { Feather } from '@expo/vector-icons'
 import homeImg from './src/assets/home.png'
 
@@ -16,7 +16,7 @@ export default function App() {
       transparent={true}
       visible={modalVisible}
       onRequestClose={() => {
-        Alert.alert("Modal has been closed.");
+        setModalVisible(!modalVisible);
       }}
     >
       <View style={styles.modalView}>    
@@ -31,25 +31,21 @@ export default function App() {
             <Image source={homeImg} />
           </View>
           
-          <Text style={styles.modalContentText}>Sometimes all we need is</Text>
-          <Text style={styles.modalContentText}>someone to talk to.</Text>
+          <Text style={styles.modalContentText}>As vezes tudo o que precisamos</Text>
+          <Text style={styles.modalContentText}>é conversar com alguém.</Text>
 
           <View style={styles.modalContentButtons}>
-            <TouchableOpacity style={styles.modalContentButton} onPress={() => {
-              setModalVisible(!modalVisible);
-            }}>
-              <Text style={styles.modalContentButtonText}>Call authorities</Text>
+            <TouchableOpacity style={styles.modalContentButton} onPress={() => {Linking.openURL(`tel:190`)}}>
+              <Text style={styles.modalContentButtonText}>Ligar para a policia.</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={styles.modalContentButton} onPress={() => {
-              setModalVisible(!modalVisible);
-            }}>
-              <Text style={styles.modalContentButtonText}>Call a friend</Text>
+            <TouchableOpacity style={styles.modalContentButton} onPress={() => {Linking.openURL('content://com.android.contacts/contacts')}}>
+              <Text style={styles.modalContentButtonText}>Ligar para um amigo</Text>
             </TouchableOpacity>
           </View>
-          <Text style={styles.modalContentText}>Don’t stay alone.</Text>
-          <Text style={styles.modalContentText}>Don’t stay in danger.</Text>
-          <Text style={styles.modalContentText}>Reach out to help.</Text>
+          <Text style={styles.modalContentText}>Não fique sozinha.</Text>
+          <Text style={styles.modalContentText}>Não fique em perigo.</Text>
+          <Text style={styles.modalContentText}>Busque formas ajuda.</Text>
 
         </View>
 
@@ -144,7 +140,8 @@ const styles = StyleSheet.create({
     padding: 20,
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'center'
+    alignItems: 'center',
+    marginBottom: 15
   },
 
   modalContentButton: {
@@ -154,12 +151,13 @@ const styles = StyleSheet.create({
     height: 50,
     width: '40%',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
   },
 
   modalContentButtonText: {
     color: '#000000',
-    fontSize: 18,
+    fontSize: 17,
+    textAlign: 'center',
   },
 
   modalContentImg: {
