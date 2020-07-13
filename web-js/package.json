@@ -1,7 +1,7 @@
 {
   "name": "together-lib",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "Button for women in situation of violence to ask help.",
   "main": "index.js",
   "scripts": {
     "test": "jest",
@@ -10,6 +10,22 @@
   },
   "author": "Douglas Lara",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/together-project/together-button-web.git"
+  },
+  "keywords": [
+    "together",
+    "button",
+    "women",
+    "violence",
+    "help",
+    "help-button",
+    "violencia",
+    "mulher",
+    "botão",
+    "denunciar"
+  ],
   "dependencies": {
     "@babel/core": "^7.10.3",
     "@babel/plugin-proposal-class-properties": "^7.10.1",

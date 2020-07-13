@@ -16,6 +16,17 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
       },
+      {
+        test: /\.(?:png|jpg|gif|svg)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'assets/[hash].[ext]',
+            }
+          },
+        ]
+      },
     ],
   },
   devServer: {
