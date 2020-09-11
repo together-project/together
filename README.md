@@ -17,21 +17,21 @@ Para estar ao lado delas criamos esse projeto que possibilita sites e aplicativo
 
 ## Sobre o projeto
 
-[![Projeto Together video](https://img.youtube.com/vi/KCxkdNeEfVk/maxresdefault.jpg)](https://youtu.be/KCxkdNeEfVk)
+[![Projeto Together video](https://raw.githubusercontent.com/together-project/together/master/assets/repo-youtube.jpg)](https://youtu.be/KCxkdNeEfVk)
 
 [www.togethersolutions.com.br](www.togethersolutions.com.br "Site do projeto Together")
 
 ## Repositórios
 
   - [Web](https://github.com/together-project/together-button-web "Web")
-  - [iOS](https://github.com/together-project/together-button-podspecs "iOS")
-  - [Android](https://github.com/together-project/together-android-project "Android")
-  - Flutter (Ainda não temos 😕)
+  - [iOS](https://github.com/together-project/together-button "iOS")
+  - [Android](https://github.com/together-project/together-button-android "Android")
+  - Flutter (Ainda não temos, bora ajudar 😃)
   
-## Casos de uso
+## Quem já utiliza 😍
 
  - [Curitiba App (em implementação)](https://play.google.com/store/apps/details?id=br.org.curitiba.ici.appcuritiba&hl=pt_BR "Curitiba App (em implementação)")
- - [Zimobi (em implementação)](https://www.zimobi.com.br/ "Zimobi (em implementação)")
+ - [Zimobi](https://www.zimobi.com.br/ "Zimobi")
   
 ## Como contribuir
 
